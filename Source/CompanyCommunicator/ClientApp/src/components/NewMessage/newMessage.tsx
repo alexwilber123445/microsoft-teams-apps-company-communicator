@@ -352,7 +352,7 @@ class NewMessage extends React.Component<INewMessageProps, formState> {
                     });
                 }
             } else {
-                Resizer.imageFileResizer(file, 400, 400, 'JPEG', 80, 0,
+                Resizer.imageFileResizer(file, 800, 800, 'PNG', 100, 0,
                     uri => {
                         if (uri.toString().length < maxCardSize - cardsize) {
                             setCardImageLink(this.card, uri.toString());
